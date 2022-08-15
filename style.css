@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+}
+
+form {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  height: 70vh;
+  width: 300px;
+  justify-content: space-around;
+  background-color: rgba(233, 227, 227, 0.9);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+label {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+}
+
+input {
+  height: 2rem;
+  margin: 0.5rem 0;
+  outline: none;
+  border-radius: 5px;
+  padding: 5px;
+  border: 1px solid;
+}
+button {
+  padding: 0.5rem;
+}
+.confirm-msg,
+.confirm-email-msg,
+.password-msg {
+  color: red;
+}
