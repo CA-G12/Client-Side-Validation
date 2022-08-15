@@ -15,7 +15,7 @@ password.addEventListener('blur', checkPassword);
 
 form.addEventListener('submit', (event) => {
     event.preventDefault();
-    if (checkFullName() && checkUsername()) {
+    if (checkFullName() && checkUsername()&&checkPassword()) {
         form.submit();
     }
 })
@@ -29,7 +29,7 @@ function checkFullName() {
         errFullName.textContent = '';
         return true;
     } else {
-        errFullName.textContent = 'Full name must be at least four letter,and you must use valid letters'
+        errFullName.textContent = 'Full name must be at least four characters,and you must use valid letters'
         return false;
     }
 }
@@ -39,8 +39,10 @@ function checkUsername() {
     let text = username.value;
     if (pattern.test(text)) {
         errorUsername.textContent = '';
+        return true ; 
     } else {
-        errorUsername.textContent = 'Username must be at least three letters and starts with a letter'
+        errorUsername.textContent = 'Username must be at least three characters and starts with a letter'
+    return false;
     }
 }
 
@@ -49,11 +51,11 @@ function checkPassword() {
     let text = password.value;
     console.log(text);
     if(pattern.test(text)){
-       
         error_password.textContent = ''; 
+        return true ;
 
     }else {
         error_password.textContent = 'Password must be at least 6 characters and must starts with letters,digits or underscore , and must contains a spacial letter';
-
+return false ; 
     }
 }
