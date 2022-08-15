@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Clint Side validation </title>
+</head>
+<main>
+    <section id="login">
+        <h1>Form Validation Example </h1>
+        <form action="ValidationExample.com" method="POST" id="submit">
+            <label for="fullName">Full Name</label>
+            <input id="fullName" type="text" required placeholder="Full Name " required />
+            <p id="error_fullName" style="color :red"></p>
+            <label for="username">Username</label>
+            <input id="username" type="text" required placeholder="Username " required />
+            <p id="error_username" style="color :red"></p>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="Password" required>
+            <p id="error_password" style="color :red"></p>
+            <input type="submit" name="btn" />
+        </form>
+        <script src="script.js"></script>
+    </section>
+</main>
+
+<body>
+
+</body>
+
+</html>
