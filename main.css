@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-image: linear-gradient(to left, rgb(148, 29, 233), #58d1e6);
+}
+
+.container {
+    padding: 3rem;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    width: 50rem;
+    max-width: 100%;
+    background-color: white;
+    box-shadow: 1px 1px 2px 1.5px rgba(0, 0, 0, 0.2), 1px 1px 5px 8px rgba(0, 0, 0, 0.1);
+    animation: form-entry 1s;
+}
+
+h1 {
+    margin-bottom: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #941de9;
+    text-shadow: 1px 1px 1px #58d1e6;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group:last-of-type {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.8rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+input {
+    padding: 1rem;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1.6rem;
+}
+
+input:not([type='submit']) {
+    border-width: 1px;
+    border-color: #ccc;
+}
+
+input.invalid:not([type='submit']) {
+    border-color: red;
+    color: red;
+}
+
+input.valid:not([type='submit']) {
+    border-color: green;
+    color: green;
+}
+
+input:focus {
+    border-width: 1px;
+    border-image: linear-gradient(to left, #941de9, #58d1e6);
+    border-image-slice: 1;
+    outline: none;
+    border-image-width: 2px;
+
+}
+
+input[type="submit"] {
+    margin-top: 1rem;
+    cursor: pointer;
+    background-image: linear-gradient(to left, #941de9, #58d1e6);
+    color: white;
+    font-weight: bold;
+    font-size: 1.8rem;
+    transition: 0.4s;
+}
+
+
+input[type="submit"]:not(:disabled):hover {
+    background-image: linear-gradient(20deg, #58d1e6, #941de9);
+}
+
+input:disabled {
+    background-image: none;
+    background-color: gray;
+    color: black;
+}
+
+.error {
+    display: block;
+    color: red;
+    font-size: 1.6rem;
+    transition: 0.3s;
+}
+
+.error.hidden {
+    visibility: hidden;
+}
+
+@keyframes form-entry {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
