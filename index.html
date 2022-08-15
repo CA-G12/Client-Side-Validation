@@ -11,19 +11,19 @@
 <body>
     <main>
         <img src="./index.png" alt="Log in">
-        <form>
+        <form id="registerForm">
             <h1>Registration</h1>
-            <label for="email">Email:
-                <input name="email" id="email" required/>
-            </label>
-            <label for="password">Password:
-                <input name="password" id="password" required/>
-            </label>
-            <label for="confirmPassword">Confirm password:
-                <input name="confirmPassword" id="confirmPassword" required/>
-            </label>
+            <label for="email">Email:</label>
+            <input name="email" id="email" required/><br>
+
+            <label for="password">Password:</label>
+            <input name="password" id="password" type="password" minlength="8" maxlength="15" required/><br>
+            
+            <label for="confirmPassword">Confirm password:</label>
+            <input name="confirmPassword" id="confirmPassword" type="password" minlength="8" maxlength="15" required/><br>
+            
             <button type="submit" id="submit-btn">Submit</button>
-            <P id='message'></P>
+            <p id='message'></p>
         </form>
     </main>
     <script src="script.js" type="text/javascript"></script>
