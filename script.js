@@ -8,8 +8,9 @@ let message = document.querySelector('.message');
 
 const emailValidation = (email) => {
   const re = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-  if (email) return re.test(email);
-  return new TypeError('please enter an email address');
+  if (!email) return new TypeError('please enter an email address');
+
+  return re.test(email);
 };
 
 const passwordValidation = (pass1, pass2) => {
