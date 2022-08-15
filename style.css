@@ -46,8 +46,10 @@ body {
 .form input {
     padding: 5px;
     padding-left: 15px;
+    border: 1px solid black;
 }
 
 .form h3 {
     color:crimson;
 }
+

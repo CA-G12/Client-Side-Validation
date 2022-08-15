@@ -21,11 +21,15 @@ function checkInputs() {
         email.style.border = "2px solid crimson";
 
     } else if (password1 !== password2) {
+        email.style.border = '1px solid black';
         message.textContent = "Passwords do not match.";
         message.style.display = 'block';
         password1.style.border = "2px solid crimson";
         password2.style.border = "2px solid crimson";
     } else {
+        email.style.border = '1px solid black';
+        password1.style.border = "1px solid black";
+        password2.style.border = "1px solid black";
         message.style.display = 'none';
     }
 
