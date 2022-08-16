@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Sign up</title>
+  </head>
+  <body>
+    <section class="container">
+      <h1 class="title">Sign up</h1>
+      <form action="/" id="form" novalidate>
+        <!--start email-->
+        <section class="requirment">
+          <label class="label">Email address</label>
+          <input type="email" placeholder="example@email.com" id="email" />
+          <i class="fa-solid fa-circle-check"></i>
+          <i class="fa-solid fa-circle-exclamation"></i>
+          <h6>error</h6>
+        </section>
+        <!--end email-->
+        <!--start password-->
+        <section class="requirment">
+          <label class="label">Password</label>
+          <input type="password" placeholder="Example1234" id="password" />
+          <i class="fa-solid fa-circle-check"></i>
+          <i class="fa-solid fa-circle-exclamation"></i>
+          <h6>error</h6>
+        </section>
+        <!--end password-->
+        <!--start confirm password-->
+        <section class="requirment">
+          <label class="label">Confirm password</label>
+          <input
+            type="password"
+            placeholder="Confirm the entered password"
+            id="confirmed-password"
+          />
+          <i class="fa-solid fa-circle-check"></i>
+          <i class="fa-solid fa-circle-exclamation"></i>
+          <h6>error</h6>
+        </section>
+        <!--end confirm password-->
+        <button>Sign up</button>
+      </form>
+    </section>
+    <script src="index.js"></script>
+  </body>
+</html>
