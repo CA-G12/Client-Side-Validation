@@ -1,0 +1,19 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(200, 241, 241);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background-color: #91c7f7;
+    width: 350px;
+    height: 300px;
+
+
+
+}
