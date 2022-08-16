@@ -37,5 +37,4 @@ else if(pass1value!==pass2value)
 giverror(pass2,"  two passwords must be match")
 else
 done(pass2)
-
 }
