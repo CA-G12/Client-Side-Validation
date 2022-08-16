@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  body {
+    font-family: "Roboto";
+    font-size: 14px;
+    background-size: 200% 100% !important;
+    -webkit-animation: move 10s ease infinite;
+            animation: move 10s ease infinite;
+    transform: translate3d(0, 0, 0);
+    background: linear-gradient(45deg, #49d49d 10%, #a2c7e5 90%);
+    height: 100vh;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+  }
+  .form{
+width: 400px;
+justify-content: center;
+display: inline-block;
+  }
+  .form input {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      }
+      .form  button{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          }
+          
+      
+  
+  .user {
+    width: 90%;
+    margin: 10vh auto;
+  }
+  
+  
+  .user__title {
+    border-radius: 20px;
+    background: linear-gradient(45deg, #20e697 30%, #82b9e5 70%);
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: white;
+    font-weight: bold;
+    padding: 20px;
+  }
+  
+  .form__input {
+    font-size: 20px;
+    display: block;
+    width: 100%;
+    padding: 40px;
+    font-family: "Roboto";
+    -webkit-appearance: none;
+    border: 0;
+    outline: 0;
+    transition: 0.3s;
+  }
+  .form__input:focus {
+    background: #f7f7f7;
+  }
+  #nameInput{
+    border-radius: 40px 40px 0px 0px;
+  }
+  #passInput{
+    border-radius: 00px 0px 40px 40px;
+  }
+  .btn {
+    margin-top: 15px;
+    border-radius: 40px 0px 40px 0px;
+    display: block;
+    width: 100%;
+    padding: 20px;
+    font-family: "Roboto";
+    -webkit-appearance: none;
+    outline: 0;
+    border: 0;
+    color: white;
+    background: #dddddd;
+    transition: 0.3s;
+    color: rgb(121, 121, 121);
+    font-size: 20px;
+  }
+  .btn:hover {
+    background: #a5a3a1;
+    color: white;
+  }
+.errorText{
+  font-size: 10px;
+  background-color: white;
+  color: red;
+  text-align: center;
+}
