@@ -1,0 +1,52 @@
+body{
+    font: 15px/1.5 Arial, Helvetica,sans-serif;
+    /* font-weight: bold; */
+    padding:0;
+    margin:0;
+    background-color:#f8f0f0;
+    display: flex;
+    justify-content: center;
+  }
+  .container{
+      width:500px;
+      height: 400px;
+      background-color: #bdb1ad;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 15px;
+      margin-top: 50px;
+  }
+  .button_1{
+      width: 150px;
+    height:38px;
+    background:#e8491d;
+    border:0;
+    padding-left: 20px;
+    padding-right:20px;
+    color:#ffffff;
+    text-align: center; 
+    margin-left: 40px;
+    border-radius: 10px;
+  }
+  form label{
+    font-weight: bold;
+  }
+  input{
+      width: 250px;
+      height: 30px;
+      border-radius: 10px;
+  }
+  form #emailError, form #passwordErorr{
+    margin-top: 5px;
+    width: 200px;
+    font-size: 14px;
+    color: #C62828;
+    background: rgba(255,0,0,0.1);
+    text-align: center;
+    padding: 5px 8px;
+    border-radius: 3px;
+    border: 1px solid #ef9A9A;
+    display: none;
+  }
