@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="user">
+        <header class="user__header">
+            <h1 class="user__title">sign-up form</h1>
+        </header>
+        
+        <form class="form">
+            <div class="form__group">
+                <input id="nameInput" type="text" placeholder="Username" class="form__input" />
+                <p id = "errorNameInput" class="errorText"></p>
+            </div>
+            <!-- <div class="form__group">
+            </div> -->
+            <div class="form__group">
+                <input id = "emailInput" type="email" placeholder="Email" class="form__input" />
+                <p id = "errorEmailInput" class="errorText"></p>
+            </div>
+            
+            <div class="form__group">
+                <input id = "passInput" type="password" placeholder="Password" class="form__input" />
+                <p id = "errorPassInput" class="errorText"></p>
+            </div>
+            
+            <button class="btn" id = "register" type="button">Register</button>
+        </form>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
