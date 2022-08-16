@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="style.css">
+ <title>Client Side Validation</title>
+</head>
+
+<body>
+ <form class="register__form" id="registerForm" novalidate autocomplete="off">
+  <h1 class="form__title">Registration</h1>
+  <label for="email" id="email-label">Email
+   <input type="email" name="email" id="email" required placeholder="Email | EX:example@example.com"
+    autocomplete="off" />
+  </label>
+  <label for="password" id="password-label">Password
+   <input type="password" name="password" id="password" required placeholder="**********" />
+  </label>
+  <label for="confirmPassword" id="confirm-password-label">Confirm password
+   <input type="password" name="confirmPassword" id="confirmPassword" placeholder="**********" required />
+  </label>
+  <button type="submit">Submit</button>
+ </form>
+ <script src="main.js"></script>
+</body>
+
+</html>
