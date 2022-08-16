@@ -1,0 +1,59 @@
+#registerForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 35vh;
+}
+label{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+
+}
+input.invalid{
+    border-color: #900;
+    background-color: #FDD;
+  }
+  
+  input:focus.invalid {
+    outline: none;
+  }
+  input.valid{
+    border: 1px solid green ;
+  }
+  .errorPassword{
+    width  : 100%;
+    padding: 0;
+
+    font-size: 80%;
+    color: white;
+    background-color: #900;
+    border-radius: 0 0 5px 5px;
+    box-sizing: border-box;
+    display: none;
+  }
+  .errorPassword.active{
+     display: block; 
+     position: absolute;
+     top: 13rem;
+  }
+  .error {
+    width  : 100%;
+    padding: 0;
+  
+    font-size: 80%;
+    color: white;
+    background-color: #900;
+    border-radius: 0 0 5px 5px;
+    box-sizing: border-box;
+  }
+  
+  .error.active {
+    padding: .3em;
+  }
+  @media (min-width:600px) {
+    #registerForm{
+      width: 30%;
+    } 
+  }
