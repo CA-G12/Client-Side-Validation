@@ -20,7 +20,11 @@ function checkInputsValidation() {
 
     if(passwordValue === '') {
 		setError(password, 'Password cannot be blank');
-	} else {
+	}else if(password.length < 6 ){
+        setError(password, "it's too short ");
+    } 
+    // add another tests 
+    else {
 		setValid(password);
 	}
 	
